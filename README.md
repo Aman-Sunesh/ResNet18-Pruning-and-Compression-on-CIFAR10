@@ -13,7 +13,7 @@ The project explores four pruning workflows:
 - **Post-pruning retraining:** mask-based retraining to preserve pruned weights while recovering accuracy.
 
 ## Model and Dataset
-
+ 
 - **Model:** ResNet-18
 - **Dataset:** CIFAR-10
 - **Framework:** PyTorch
