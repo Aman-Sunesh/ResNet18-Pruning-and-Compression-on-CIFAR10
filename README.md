@@ -2,8 +2,6 @@
 
 This repository documents a PyTorch pruning study for ResNet-18 on CIFAR-10. The project compares several neural network pruning strategies and analyzes the tradeoff between model sparsity, accuracy, and practical deployability.
 
-> Note: If this originated from a course lab, keep the full notebook private unless public posting is explicitly allowed. A cleaned report-style version is safer for a portfolio repository.
-
 ## Overview
 
 The project explores four pruning workflows:
@@ -38,20 +36,6 @@ The project explores four pruning workflows:
 ## Main Takeaways
 
 Magnitude pruning works well when applied layer-wise because different ResNet layers have different weight scales and pruning sensitivity. L1 regularization generally improves pruning robustness by pushing more weights near zero, making magnitude-based removal safer. Structured filter pruning is more hardware-friendly but initially causes a larger accuracy drop, which can be largely recovered through masked retraining.
-
-## Suggested Repository Structure
-
-```text
-.
-├── README.md
-├── notebooks/
-│   └── resnet18_pruning_cifar10.ipynb
-├── figures/
-│   ├── weight_distributions.png
-│   ├── layer_sensitivity.png
-│   └── regularization_comparison.png
-└── requirements.txt
-```
 
 ## Technologies
 
